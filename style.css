@@ -11,10 +11,12 @@
   font-style: normal;
 }
 body{
-    font-family: "Fredoka"
+    font-family: "Fredoka", sans-serif;
+}
+.container {
+    padding: 15px 310px;
 }
 nav{
-    padding: 15px 310px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,6 +64,22 @@ ul{
 
 .foodBg{
     background-image: url(img/Bg_hdr.png);
-    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 710px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 45px;
+}
+.pagination{
+    width: 125px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.fa-circle-dot{
+   color: white;
+}
+.fa-circle-dot:hover{
+    color:rgb(255, 212, 13);;
 }
