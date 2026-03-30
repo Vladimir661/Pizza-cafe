@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6d68a2ed74.js" crossorigin="anonymous"></script>
-    <!-- <script src="main.js"></script> -->
 </head>
 <body>
 <header>
@@ -75,8 +74,8 @@
         </div>
     </section>
 </header>
-<main>
-    <section class="about container">
+<main class="container">
+    <section class="about">
         <div class="textHeaderMainLeft">
             <p class="aboutText">
                 About The Food Restaurant
@@ -105,7 +104,7 @@
             </div>
         </div>
     </section>
-    <article class="cardsMain container">
+    <article class="cardsMain">
         <div class="card">
              <div class="borderCard">
                 <div class="cardName">
@@ -134,28 +133,273 @@
             <img src="img/place.png" alt="place">
         </div>
     </article>
-    <section class="cardsMenu container">
-        <div class="cardMenu">
-            <img class="imgDefault" src="img/Dessert.svg"  alt="dessert">
-            <img class="imgHover" src="img/Desset-white.svg" alt="dessert">
-            <h2>Dessert</h2>
-        </div>
-        <div class="cardMenu">
-            <img class="imgDefault" src="img/steak.png" alt="steak">
-            <img class="imgHover" src="img/Steak-white.png" alt="steak">
-            <h2>Steak</h2>
-        </div>
-        <div class="cardMenu">
-            <img  class="imgDefault"src="img/coffee.png" alt="coffee">
-            <img class="imgHover" src="img/Coffee-white.png" alt="coffee">
-            <h2>Coffee</h2>
-        </div>
-        <div class="cardMenu">
-            <img class="imgDefault" src="img/burger.png" alt="burger">
-            <img class="imgHover" src="img/Burger-white.png" alt="burger">
-            <h2>Burger</h2>
-        </div>
+    <section class="foodMainSection">
+        <section class="cardsMenu ">
+            <div class="cardMenu">
+                <img class="imgDefault" src="img/Dessert.svg"  alt="dessert">
+                <img class="imgHover" src="img/Desset-white.svg" alt="dessert">
+                <h2>Dessert</h2>
+            </div>
+            <div class="cardMenu">
+                <img class="imgDefault" src="img/steak.png" alt="steak">
+                <img class="imgHover" src="img/Steak-white.png" alt="steak">
+                <h2>Steak</h2>
+            </div>
+            <div class="cardMenu">
+                <img  class="imgDefault"src="img/coffee.png" alt="coffee">
+                <img class="imgHover" src="img/Coffee-white.png" alt="coffee">
+                <h2>Coffee</h2>
+            </div>
+            <div class="cardMenu">
+                <img class="imgDefault" src="img/burger.png" alt="burger">
+                <img class="imgHover" src="img/Burger-white.png" alt="burger">
+                <h2>Burger</h2>
+            </div>
+        </section>
+        <section class="foodBBQ ">
+            <img class="foodBBQImg" src="img/BBQ.png" alt="BBQ">
+            <div class="bgElemet">
+                <div class="wrapperBgElement">
+                    <h2 class="foodBBQTitle">BBQ</h2>
+                    <div class="descriptionBBQs">
+                        <div class="descriptionBBQ">
+                            <div class="decorateBBQBloc">
+                                <div class="decorationDesc">
+                                <h3>Sake BBQ sauce</h3>
+                                <p>radish, black sesame seeds, coriander</p>
+                            </div>
+                            <span class="advertisingPrice">
+                                <i class="fa-solid fa-dollar-sign"></i>9.00
+                            </span>
+                            </div>
+                            <span class="decorationDescBBQ"></span>
+                        </div>
+
+                        <div class="descriptionBBQ">
+                            <div class="decorateBBQBloc">
+                                <div> 
+                                <h3>BBQ baby back ribs</h3>
+                                <p>sticky Asian glaze, charred lime, chilli cashews</p>
+                            </div>
+                            <span class="advertisingPrice">
+                                <i class="fa-solid fa-dollar-sign"></i>16.00
+                            </span>
+                            </div>
+                            <span class="decorationDescBBQ"></span>
+                        </div>
+                        <div class="descriptionBBQ">
+                            <div class="decorateBBQBloc">
+                                <div>
+                                <h3>Half smoked chicken</h3>
+                                <p>miso butter glaze, charred lime wedge, sake bbq</p>  
+                            </div>
+                            <span class="advertisingPrice">
+                                <i class="fa-solid fa-dollar-sign"></i>34.00
+                            </span>  
+                            </div>
+                            <span class="decorationDescBBQ"></span>
+                        </div>
+                        <div class="descriptionBBQ">
+                            <div class="decorateBBQBloc">
+                                <div>
+                                <h3>Dusted chicken wings</h3>
+                                <p>tossed in Korean hot sauce, pickled radish</p>
+                            </div>
+                            <span class="advertisingPrice">
+                                <i class="fa-solid fa-dollar-sign"></i>40.00
+                            </span>
+                            </div>
+                            <span class="decorationDescBBQ"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
     </section>
+    <section class="discoverMenu">
+        <h2 class="discoverMenu__title">Discover Menu</h2>
+        <article class="discoverMenu__cards">
+            <div class="discoverMenu__card">
+                <img src="img/steaks.png" alt="steaks">
+                <div class="discoverMenu__card-description">
+                    <h3>Steaks & BBQ</h3>
+                    <p>
+                        Canonical classics to obscure tiki drinks     
+                    </p>
+                </div>
+                <div class="discoverMenu__card-circle">
+                    <div class="discoverMenu__card-circle-description">
+                        <span><i class="fa-solid fa-dollar-sign"></i>120</span>
+                        <p>Person</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discoverMenu__card">
+                <img src="img/cocktails.png" alt="cocktails">
+                <div class="discoverMenu__card-description">
+                    <h3>Cocktails</h3>
+                    <p>
+                        Canonical classics to obscure tiki drinks     
+                    </p>
+                </div>
+                <div class="discoverMenu__card-circle">
+                    <div class="discoverMenu__card-circle-description">
+                        <span><i class="fa-solid fa-dollar-sign"></i>120</span>
+                        <p>Person</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <form class="reserveTable">
+        <div class="reserveTable__title">
+            <h2 class="reserveTable__suptitle">
+            RESERVE A TABLE
+        </h2>
+        <h3 class="reserveTable__subtitle">
+            Discover our New Menu!
+        </h3>
+        </div>
+        <div class="reserveTable__form-groups">
+            <div class="reserveTable__form-group--long">
+                <label for="nuberOfGuests"></label>
+                <div class="reserveTable__form--custom-input" id="nuberOfGuests">
+                    <span>Number of Guests</span>
+                </div>
+            </div>
+            <div class="reserveTable__form-group--short">
+                <label for="nuberOfGuests"></label>
+                <div class="reserveTable__form--custom-input" id="nuberOfGuests">
+                    <span>Date</span>
+                </div>
+            </div>
+            <div class="reserveTable__form-group--short">
+                <label for="nuberOfGuests"></label>
+                <div class="reserveTable__form--custom-input" id="nuberOfGuests">
+                    <span>Time</span>
+                </div>
+            </div>
+            <div class="reserveTable__form-group--long">
+                <label for="nuberOfGuests"></label>
+                <div class="reserveTable__form--custom-input" id="nuberOfGuests">
+                    <span>Full Name</span>
+                </div>
+            </div>
+            <div class="reserveTable__form-group--long">
+                <label for="nuberOfGuests"></label>
+                <div class="reserveTable__form--custom-input" id="nuberOfGuests">
+                    <span>Phone Number</span>
+                </div>
+            </div>
+        </div>
+        <div class="reserveTable__custom-button--wrapper">
+            <div class="reserveTable__custom-button">
+                <button class="reserveTable__button" type="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </form>
+    </section>
+        <section class="featuredDishes">
+            <h2 class="featuredDishes__title">
+                Featured Dishes
+            </h2>
+            <article class="featuredDishes__cards">
+                <div class="featuredDishes__card">
+                    <div class="featuredDishes__card--cirle">
+                        SALE
+                    </div>
+                    <div class="featuredDishes__card-wrapper-img">
+                        <img class="featuredDishes__card-img" src="/img/crispy.png" alt="crispy">
+                    </div>
+                    <div class="featuredDishes__decorations">
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                    </div>
+                    <h3 class="featuredDishes__sub-titile">
+                        Crispy Fried Chicken
+                    </h3>
+                    <div class="featuredDishes__price-block">
+                        <span class="featuredDishes__old-price">
+                                <s><i class="fa-solid fa-dollar-sign"></i>14.85</s>
+                        </span>
+                        <span class="featuredDishes__new-price">
+                                <i class="fa-solid fa-dollar-sign"></i>10.85
+                        </span>
+                    </div>
+                    <div class="featuredDishes__shop-button">
+                        <img src="/img/buy.svg" alt="buy">
+                    </div> 
+                </div>
+                <div class="featuredDishes__card">
+                    <div class="featuredDishes__card--cirle">
+                        SALE
+                    </div>
+                    <div class="featuredDishes__card-wrapper-img">
+                        <img class="featuredDishes__card-img" src="/img/shroom.png" alt="shroom">
+                    </div>
+                    <div class="featuredDishes__decorations">
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                    </div>
+                    <h3 class="featuredDishes__sub-titile">
+                        Shroom Bacon Burger
+                    </h3>
+                    <div class="featuredDishes__price-block">
+                        <span class="featuredDishes__old-price">
+                                <s><i class="fa-solid fa-dollar-sign"></i>21.76</s>
+                        </span>
+                        <span class="featuredDishes__new-price">
+                                <i class="fa-solid fa-dollar-sign"></i>11.76
+                        </span>
+                    </div>
+                    <div class="featuredDishes__shop-button">
+                        <img src="/img/buy.svg" alt="buy">
+                    </div> 
+                </div>    
+                <div class="featuredDishes__card">
+                    <div class="featuredDishes__card--cirle">
+                        SALE
+                    </div>
+                    <div class="featuredDishes__card-wrapper-img">
+                        <img class="featuredDishes__card-img" src="/img/black_coffee.png" alt="black coffee">
+                    </div>
+                    <div class="featuredDishes__decorations">
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                        <div class="featuredDishes__decoration"></div>
+                    </div> 
+                    <h3 class="featuredDishes__sub-titile">
+                        Delicious Black Coffee
+                    </h3>
+                    <div class="featuredDishes__price-block">
+                        <span class="featuredDishes__old-price">
+                                <s><i class="fa-solid fa-dollar-sign"></i>21.76</s>
+                        </span>
+                        <span class="featuredDishes__new-price">
+                                <i class="fa-solid fa-dollar-sign"></i>11.76
+                        </span>
+                    </div>
+                    <div class="featuredDishes__shop-button">
+                        <img src="/img/buy.svg" alt="buy">
+                    </div>   
+                </div>
+            </article>
+            <div class="featuredDishes__pagination">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <i class="fa-solid fa-circle-dot"></i>
+            </div>
+        </section>
 </main>
 </body>
 </html>

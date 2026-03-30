@@ -17,6 +17,8 @@ body{
 .container {
     margin: 15px 310px;
 }
+
+/* Header Navigation */
 nav{
     display: flex;
     flex-direction: row;
@@ -160,14 +162,21 @@ ul{
 .advertisingRating i {
     color: rgb(255, 212, 13);
 }
+
+/* Main */
+
 main{
     margin: 70px 0px;
     max-width: 100vw;
     height: 100vh;
 }
+
+/* About section */
+
 .about{
     display: flex;
     justify-content: space-between;
+    margin: 50px 0;
 }
 .aboutText{
     color: rgb(243, 39, 76);
@@ -249,11 +258,18 @@ main{
     align-items: center;
     justify-content: center; 
 }
+
+/* Food menu section */
+
+.foodMainSection{
+    min-height: 100vh;
+}
 .cardsMenu{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 60px 0 0 0;
+    gap: 20px;
 }
 .cardMenu{
     display: flex;
@@ -286,4 +302,381 @@ main{
 
 .cardMenu:hover .imgDefault {
   display: none;
+}
+
+/* Food BBQ section */
+
+.bgElemet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 25%;
+    margin: 35px 0;
+    width: 936px;
+    height: 568px;
+    border-radius: 30px;
+    background: rgb(206, 209, 215);
+}
+.wrapperBgElement{
+    position: relative;
+    top: 0;
+    left: 15%;
+    width: 60%;
+}
+.foodBBQImg{
+    position: absolute;
+    z-index: 11;
+    margin: 40px 15px 0 0;
+}
+.foodBBQTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+.advertisingPrice{
+    color: rgb(243, 39, 76);
+}
+.descriptionBBQs{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px 0 0 0;
+}
+.descriptionBBQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+.decorationDesc{
+    display: flex;
+    flex-direction: column;
+}
+.decorateBBQBloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+}
+.decorationDescBBQ{
+    content: "";
+    border: 2px dashed black;
+    top: 35%;
+    width: 96%;
+}
+
+/* Discover Menu */
+
+.discoverMenu{
+    min-height: 100vh;
+    text-align: center;
+}
+.discoverMenu__title {
+    margin: 30px 0 100px 0;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+.discoverMenu__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 212, 13);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.discoverMenu__title:hover::after {
+    transform: scaleX(1);
+}
+/* Discover Menu Cards */
+
+.discoverMenu__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 150px;
+}
+.discoverMenu__card{
+    position: relative;
+}
+.discoverMenu__card-description{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 60px;
+}
+.discoverMenu__card-description h3 {
+    font-weight: bold;
+    word-spacing: 5px;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+.discoverMenu__card-description p {
+    font-size: 18px;
+    width: 80%;
+}   
+.discoverMenu__card img{
+    width: 97%;
+}
+.discoverMenu__card-circle{
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgb(255, 212, 13);
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.discoverMenu__card-circle span{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(243, 39, 76, 1);
+}
+.discoverMenu__card-circle p{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.discoverMenu__card-circle-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Reserve Table */
+
+.reserveTable{
+    background-image: url(/img/backgroundReserveTable.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    height: 375px;
+    border-radius: 30px;
+    padding: 70px 60px 0;
+}
+.reserveTable__title{
+    width: 180px;
+    color: white;
+}
+.reserveTable__suptitle{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.reserveTable__suptitle::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 212, 13);
+    transform-origin: center;
+}
+.reserveTable__subtitle{
+    font-size: 15px;
+}
+.reserveTable__form-groups{
+    display: flex;
+    flex-wrap: wrap;
+    width: 777px;
+    gap: 30px;
+    flex-direction: row;
+}
+.reserveTable__form-group--long{
+    width: 373px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: white;
+}
+.reserveTable__form-group--short{
+    width: 171px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: white;
+}
+.reserveTable__form--custom-input{
+    padding: 20px 0 15px 30px;
+    text-align: left;
+}
+.reserveTable__custom-button--wrapper{
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+}
+.reserveTable__custom-button{
+    position: relative;
+    width: 120px;
+    height: 75px;
+    border: 3px solid rgb(255, 212, 13);
+    border-radius: 12px;
+}
+.reserveTable__button{
+    position: absolute;
+    top: 4px;
+    left: -22px;
+    width: 130px;
+    height: 60px;
+    background-color:rgb(255, 212, 13);
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.reserveTable__button:hover{
+    background-color:rgb(231, 186, 49);
+    border: 1px solid rgb(21, 20, 20); 
+}
+
+/*  Featured Dishes */
+
+.featuredDishes{
+    min-height: 100vh;
+    text-align: center;
+}
+.featuredDishes__title{
+    margin: 65px 0;
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+.featuredDishes__title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 212, 13);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.featuredDishes__title:hover::after{
+    transform: scaleX(1);
+}
+.featuredDishes__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+.featuredDishes__card{
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    height: 460px;
+    border-radius: 30px;
+    border: 4px solid rgba(255, 212, 13, 1);
+    margin-bottom: 60px;
+}
+.featuredDishes__card--cirle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 212, 13, 1);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.featuredDishes__card-wrapper-img{
+    background-image: url(/img/backgroundReserveTable.png);
+    width: 333px;
+    height: 140px;
+    border-radius: 80px;
+    margin: 30px 20px;
+    position: relative;
+}
+.featuredDishes__card-img{
+    position: absolute;
+    top: -80px;
+    left: 0px;
+}
+.featuredDishes__decorations{
+    margin: 70px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.featuredDishes__decoration{
+    width: 10px;
+    height: 16px;
+    border: 2px solid rgb(255, 212, 13);
+}
+.featuredDishes__sub-titile{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 20px;
+}
+.featuredDishes__price-block{
+        margin: 5px 20px;
+}
+.featuredDishes__new-price{
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(85, 85, 85, 1);
+}
+.featuredDishes__new-price i{
+    color: rgb(243, 39, 76);
+}
+.featuredDishes__shop-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: rgb(255, 212, 13);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.featuredDishes__pagination{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.featuredDishes__pagination .fa-circle-dot{
+   color: rgb(181, 181, 181);
+}
+.featuredDishes__pagination .fa-circle-dot:hover{
+    color: rgb(243, 39, 76);
 }
