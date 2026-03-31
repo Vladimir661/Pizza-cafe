@@ -557,7 +557,7 @@ main{
 /*  Featured Dishes */
 
 .featuredDishes{
-    min-height: 100vh;
+    min-height: 80vh;
     text-align: center;
 }
 .featuredDishes__title{
@@ -666,7 +666,6 @@ main{
     bottom: 20px;
     right: 20px;
 }
-
 .featuredDishes__pagination{
    display: flex;
    flex-direction: row;
@@ -678,5 +677,110 @@ main{
    color: rgb(181, 181, 181);
 }
 .featuredDishes__pagination .fa-circle-dot:hover{
+    color: rgb(243, 39, 76);
+}
+
+/* Testimonials & Reviews */
+
+.testimonialsReviews{
+    height: 80vh;
+    margin: 60px 0;
+}
+.testimonialsReviews__sup-titile{
+    color: rgb(243, 39, 76);
+    font-size: 22px;
+}
+.testimonialsReviews__titile{
+    font-size: 45px;
+    font-weight: bold;
+    width: 300px;
+    margin: 15px 0 30px 0;
+}
+.testimonialsReviews__block{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.testimonialsReviews__comments{
+    border: 3px solid rgb(255, 212, 13);
+    border-radius: 30px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+}
+.testimonialsReviews__paragraph{
+    font-size: 26px;
+    font-weight: lighter;
+}
+.testimonialsReviews__customer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonialsReviews__customer-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+.testimonialsReviews__decorations{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.testimonialsReviews__decoration{
+    width: 10px;
+    height: 16px;
+    border: 2px solid rgb(255, 212, 13);
+}
+.testimonialsReviews__images{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.testimonialsReviews__first-image{
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 0;
+}
+.testimonialsReviews__second-image{
+    position: absolute;
+    z-index: 2;
+    bottom: 200px;
+    right: -155px;
+}
+.testimonialsReviews__third-image{
+    position: relative;
+    z-index: 3;
+    bottom: -125px;
+    right: -300px;
+}
+.testimonialsReviews__images img{
+    width: 90%;
+    height: 90%;
+}
+.testimonialsReviews__profile-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(255, 212, 13);
+}
+.festimonialsReviews__pagination{
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+   gap: 20px;
+   margin: 45px 0;
+}
+.festimonialsReviews__pagination .fa-circle-dot{
+   color: rgb(181, 181, 181);
+}
+.festimonialsReviews__pagination .fa-circle-dot:hover{
     color: rgb(243, 39, 76);
 }
